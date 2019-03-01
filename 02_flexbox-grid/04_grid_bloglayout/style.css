@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+@media(min-width: 500px){
+
+    header{
+        display: grid;
+        grid-template-columns: minmax(180px, 1fr) 3fr;
+        align-items: center;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 2em;
+    }
+
+    aside{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 1em;
+    }
+
+    
+    
+
+
+}
