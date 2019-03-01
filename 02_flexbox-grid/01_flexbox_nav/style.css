@@ -1,0 +1,23 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a{
+    flex: 1 1 200px;
+    text-align: center;
+    order: 2;
+}
+
+/*standaard 200 px per blokje
+als er plaats te veel is*/
+
+nav a.logo{
+    color: goldenrod;
+    flex: 1 0 200px;
+    order: 1;
+}
+/* 0 = logo mag niet kleiner worden
+order is volgorde, daarmee kunnen we de volgorde van de
+elementen wijzigen*/

@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+/* zorgt ervoor dat de padding, ... mee in de grootte van het element zit
+zo moeten we geen berekeningen doen rond breedtes*/
+
+h1{
+    font-family: Oswald;
+  }
+
+article img{
+    max-width: 100%;
+}
+
+/*@supports (display:grid){}
+zo kan je layouts bouwen in het geval het ondersteund wordt of niet*/
+
+@media(min-width: 40em){
+
+    section{
+        display: flex;
+    }
+
+    section article{
+        padding: 1em;
+        flex: 1 1 30%;
+        
+    }
+    /*flex: 1 1 0%*/
+
+    section article.xl{
+        flex: 1 1 40%;
+    }
+    /*flex-grow: 2*/
+
+
+
+}
+
