@@ -14,8 +14,12 @@
                 this.title = title;
             }
 
+            setRating(rating){
+                this.rating = rating;
+            }
+
             play(){
-                console.log(`🍿  ${this.title}`);
+                console.log(`🍿  ${this.title} - ${this.rating}`);
             }
         }
         
@@ -27,6 +31,7 @@
         let movie2 = new Movie("The Lion King");
         let movie3 = new Movie("Predator");
 
+        movie2.setRating(6.8);
         movie2.play();
     
     </script>
