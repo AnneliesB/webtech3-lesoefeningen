@@ -8,11 +8,12 @@
 </head>
 <body>
     <script>
-        var Movie = function (title){
+        let Movie = function (title){
+            // dit is een constructor, dus arrowsyntax kan hier niet
             this.title = title;
             // this verwijst altijd naar het huidige object (bv een film die je hebt aangemaakt)
-            this.play = function(){
-                console.log("▶️ Now playing " + this.title);
+            this.play = () => {
+                console.log(`▶️ Now playing ${this.title}`);
             }
         }
 
@@ -30,9 +31,9 @@
         aan het prototype koppelen we de eigenschap play
         als we dan de functie aanroepen gaat die de functie uitvoeren*/
         
-        var movie1 = new Movie("Aquaman");
-        var movie2 = new Movie("The Lion King");
-        var movie3 = new Movie("Predator");
+        let movie1 = new Movie("Aquaman");
+        let movie2 = new Movie("The Lion King");
+        let movie3 = new Movie("Predator");
 
         movie2.play();
     </script>
