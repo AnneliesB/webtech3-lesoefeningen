@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const badmovies = [
+            'Aquaman',
+            'The Lion King',
+            'Predator'
+        ];
+
+        /*const watching = badmovies.map(function(movie){
+            return movie + " is a bad movie.";
+            // lust over de array bad movies en voegt overal iets bij
+            // standaard manier
+            
+        });*/
+        
+        const watching = badmovies.map(movie =>{
+            return movie + " is a really bad movie.";
+            // function mag weg
+            // indien we maar 1 parameter meegeven, geen haakjes nodig
+            
+        });
+
+        
+
+
+        console.log(watching);
+    </script>
+</body>
+</html>
