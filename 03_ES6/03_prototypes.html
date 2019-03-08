@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Movie = function (title){
+            this.title = title;
+            // this verwijst altijd naar het huidige object (bv een film die je hebt aangemaakt)
+            this.play = function(){
+                console.log("▶️ Now playing " + this.title);
+            }
+        }
+
+       /*  Movie.prototype.play = function(){
+            console.log("▶️ Now playing " + this.title);
+        } 
+        
+       // achterliggend bestaat een prototype in de functie
+        // is hetzelfde als de functie in de variabele Movie
+       //  prototype wordt niet vaak gebruikt
+        */
+
+        /* Movie is een klasse die kenmerken heeft.
+        je kan dus zeggen movie, neem het prototype (het skelet, de definitie ervan) 
+        aan het prototype koppelen we de eigenschap play
+        als we dan de functie aanroepen gaat die de functie uitvoeren*/
+        
+        var movie1 = new Movie("Aquaman");
+        var movie2 = new Movie("The Lion King");
+        var movie3 = new Movie("Predator");
+
+        movie2.play();
+    </script>
+</body>
+</html>
